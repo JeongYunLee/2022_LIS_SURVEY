@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Report - LIS SURVEY @2022</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/cau.png" rel="icon">
+  <link href="assets/img/cau.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Baker - v4.1.0
+  * Template URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!--side bar-->
+      <!--https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp-->
+      <style>
+      input[id="menuicon"] {display:none;}
+      input[id="menuicon"] + label {display:block;margin:27px;width:30px;height:25px;position:fixed;left:0;top:0;cursor:pointer;}
+      input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;border-radius:30px;background:#fff;transition:all .35s;}
+      input[id="menuicon"] + label span:nth-child(1) {top:0;}
+      input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} /* ����ϰ� ����� �� �ִ� style top:calc(50% - 2.5px); margin-top:-2.5px;*/
+      input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+      input[id="menuicon"]:checked + label {z-index:2;}
+      input[id="menuicon"]:checked + label span {background:#fff;}
+      input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+      input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+      input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+      div[class="sidebar"] {width:300px;height:100%;background:#222;opacity:0.6;position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
+      input[id="menuicon"]:checked + label + div {left:0;}
+      </style>
+      
+      <input type="checkbox" id="menuicon">
+      <label for="menuicon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="sidebar">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="sidenav">
+          </button>
+          <button class="dropdown-btn">2022 LIS SURVEY
+            <i class="fa fa-caret-down" ></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="index.html", target="_blank">2022 분석레포트</a>
+            <a href="./visualization/main.html", target="_blank">2022 전체 시각화</a>
+            <a href="https://docs.google.com/forms/d/11iRgydAzn1fq03ieVEfC4X-39hW5D9UBzCXNKwSiZ-c/edit?usp=drive_web", target="_blank">2022 설문 구글폼</a>
+            <a href="https://colab.research.google.com/drive/14mrKMQTJlEAl1RwNwK0aujKhkWZ4fhP2?usp=sharing", target="_blank">2022 분석 코드</a>
+            <a href="https://docs.google.com/spreadsheets/d/19PbyGhI9-YDV3HzUBb9s38slocYzQ0U09zvNCixussQ/edit", target="_blank">2022 서술형 전체 응답</a>
+          </div>
+
+          <button class="dropdown-btn">2021 LIS SURVEY
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="http://hike.cau.ac.kr/lis/survey/2021", target="_blank">2021 분석레포트</a>
+            <a href="http://hike.cau.ac.kr/lis/survey/2021", target="_blank">2021 전체 시각화</a>
+            <a href="https://docs.google.com/forms/d/104eLDMrR6D4HA2c4aXd8-sPkfLHdjg7acTaVVZUfCHY/edit", target="_blank">2021 설문 구글폼</a>
+            <a href="https://drive.google.com/drive/folders/1k3QfDBNGOGixk7R_m7N6U7asKpUAcMtA", target="_blank">2021 분석 코드</a>
+            <a href="https://docs.google.com/spreadsheets/d/1opQrTobsxhyz34dOTRBJTZqBlae6TPgFqKIybQ6dm4I/edit?usp=drive_web&ouid=116486459757476414916", target="_blank">2021 서술형 전체 응답</a>
+          </div>
+        </div>
+
+        <div style="position : absolute; bottom:2%; left:3%;font-size: 13px;color:rgb(163, 163, 163)">분석 및 제작: <br>설지은, 이정윤, 최은혜, 김지은, 여서연, 이수현</div>
+      </div>
+
+      <!--Navi bar-->
+
+      <h1 class="logo"><a href="index.html" style='text-decoration: none;'>LIS SURVEY 2022</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#contents">목차</a></li>
+          <li><a class="nav-link scrollto" href="#about">배경</a></li>
+          <li><a class="nav-link scrollto" href="#services1">학과</a></li>
+          <li><a class="nav-link scrollto " href="#services2">대학원</a></li>
+          <li><a class="nav-link scrollto" href="#services3">취업</a></li>
+          <li><a class="nav-link scrollto" href="#faq">마무리</a></li>
+          <li class="dropdown"><a href="#" style='text-decoration: none;'><span>More</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+			<!--링크 업데이트 필요-->
+              <li><a href="https://drive.google.com/drive/folders/1RdxCmUanARFXjOhFPWb9z7TFowgWaz8o?ths=true" target='_blank'>Survey: Google Form</a></li>
+              <li><a href="https://colab.research.google.com/drive/14mrKMQTJlEAl1RwNwK0aujKhkWZ4fhP2#scrollTo=0dQRriFrArd9&uniqifier=2" target='_blank'>Code: Google Colab</a></li>
+              <li><a href="./visualization/main.html" target='_blank'>전체 시각화</a></li>
+              <!-- <li><a href="pre-analysis.html"  target='_blank'>Preliminary Analysis</a></li> -->
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container position-relative">
+      <h1>문헌정보학과 재학생&middot졸업생은 <br><strong>어떤 생각</strong>을 하고 있을까?</h1>
+      <h2>LIS SURVEY 2022</h2>
+      <a href="#contents" class="btn-get-started scrollto" style='text-decoration: none;'>Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <section id="contents" class="contents d-flex align-items-center justify-content-center">
+      <div class="container position-relative">
+        <h1>Contents</h1>
+        <ul class="content contentdescription">
+          <li><strong class="text-label">1. 분석배경</strong></li>
+          <li><strong class="text-label">2. 학과</strong></li>
+          <li><strong class="text-label">3. 대학원</strong></a></li>
+          <li><strong class="text-label">4. 취업 </strong></li>
+        </ul>
+      </div>
+    </section><!-- End Hero -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class='row'>
+
+          <div style="width:50%;float:left;">
+            <h3>분석 배경</h3>
+            <p style="color:#8b97b3">중앙대학교 문헌정보학 전공자는 진로에 대해 어떤 생각을 할까? </p>
+
+            <p>
+			        학사생활이 비대면으로 진행된지 2년이 넘어간다. 모든 것이 비대면으로 진행되는 상황은 문헌정보학과 구성원 간의 소통을 어렵게 했다. 서로가 어떤 생각을 하는지 학과 및 교육과정, 진로에 대해 어떤 의견을 갖고 있는지 더욱 알기 어려워졌다.
+			        본 설문은 이러한 문제를 파악하고 해결방법을 논하기 위해 시작되었다.
+              <br><br>
+              설문은 문헌정보학과 재학생(대학원생 포함), 졸업생을 대상으로 2022년 4월 6일 ~ 5월 1일 간 구글 설문 폼을 통해 진행되었다.
+			        수집한 데이터는 구글 colab을 이용하여 분석하였고, 학과의 모든 구성원들에게 수집한 데이터와 분석 코드를 공유한다. 
+              설문 대상은 재학생 (특히 2021, 2019학번)의 응답 비율이 높았고, 취업자, 취준생은 각각 2021, 2022년도 졸업생의 비율이 높게 나타났다.
+              설문 전반에서 졸업생의 설문 참여도가 낮다는 한계가 드러난다. 
+              향후 졸업생의 더 많은 관심과 참여를 통해 해당 설문의 정확도와 일반화가 이루어지길 기대한다. 
+              <br><br>
+			        분석결과를 통해 재학생들 대다수가 진로를 고민하지만 뚜렷한 방향을 잡기를 힘들어 하며 관련 정보를 얻는 데 어려움을 겪고 있음을 알 수 있다.
+			  
+			        <a href='../major.html#jobinfo' target='_blank'>(학과 취업정보 교류정도)</a>.
+			        한편, 응답자의 대부분은 학과 차원에서 취업 정보의 교류가 재대로 이루어지지 않는다고 생각한다. 재학생의 약 15%만 긍정적인 응답을 보였다.
+              따라서 <b>설문 결과로 확인한 학과 구성원의 어려움을 해결하기 위해, 취업 정보 교류를 활성화시킬 수 있는 방안을 검토할 필요</b>가 있다.
+            </p>
+        </div>
+
+          <div style="width:40%;float:left;overflow-x:visible;padding-left:0;">
+            <br><br><br>
+            <ul class="about description">
+              <li><strong class="text-label">기간:</strong> 2022년 4월 6일 ~ 5월 1일</li>
+              <li><strong class="text-label">응답자:</strong> 86명 (학부 재학생 68명, 대학원생 4명, 졸업생 14명)</li>
+              <li><strong class="text-label">조사분석:</strong>
+              <a href="mailto:wldmsk02@gmail.com" style='color: #444444; text-decoration: none;'; onmouseover="this.style.color='#ffce3a'"; onmouseout="this.style.color='#444444'">김지은 (2021)</a> |
+              <a href="mailto:violay2002@gmail.com" style='color: #444444; text-decoration: none;'; onmouseover="this.style.color='#ffce3a'"; onmouseout="this.style.color='#444444'">설지은 (2019)</a> |
+              <a href="mailto:sul9911@gmail.com" style='color: #444444; text-decoration: none;'; onmouseover="this.style.color='#ffce3a'"; onmouseout="this.style.color='#444444'">여서연 (2021)</a> |<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="mailto:stella1244@naver.com" style='color: #444444; text-decoration: none;'; onmouseover="this.style.color='#ffce3a'"; onmouseout="this.style.color='#444444'">이수현 (2022)</a> |
+              <a href="mailto:cathx618@gmail.com" style='color: #444444; text-decoration: none;'; onmouseover="this.style.color='#ffce3a'"; onmouseout="this.style.color='#444444'">이정윤 (2020)</a> | <a href="mailto:csp4719@gmail.com" style='color: #444444; text-decoration: none'; onmouseover="this.style.color='#ffce3a'"; onmouseout="this.style.color='#444444'">최은혜 (2019)</a></li>
+              <li><strong class="text-label">조언:</strong> 김유승 | 김학래 (문헌정보학과 교수)</li>
+            </ul>
+
+            <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/1year.html" height="250" width="140%"></iframe>
+
+            <ul class="about description">
+              <p style=' font-size: 12px; color:#868e96;'>* 재학생: 입학연도| 졸업생: 졸업연도</p>
+
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services1" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>학과</h2>
+        </div>
+
+        <div class="row">
+          <p>문헌정보학과 재학생들은 전공에 대해 어떤 생각을 갖고 있을까? 문헌정보학을 전공하는 학생들의 다전공 현황, 선택 이유를 조사하고, 희망 직무에 따라 다전공의 영향에 대해 알아 본다. 한편, 다전공을 이수하는 과정에서 겪는 어려움과 이에 대한 대응 방안을 논의하고자 한다.</p>
+          
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">다전공 이수 여부</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/2_1multumajoryn.html" height="270" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 22학번을 제외한 재학생 64명, 취준생 5명, 취업자 9명 | 단일선택</p>
+          <p>문헌정보학과 재학생(대학원생, 복수전공생 포함) 64명(아직 다전공 이수 불가한 22학번 제외)을 대상으로 다전공 여부를 조사했다.
+		      응답 결과를 보면, 34명(53.12%)이 이수하는 반면, 30명(46.88%)은 이수하지 않고 있다. 졸업생은 재학생보다 다전공을 이수한 비율이 약 20%이상 높다.</p>
+          <p><br>문헌정보학과 재학생의 약 53%가 선택한 다전공 현황은 어떨까?
+		      다전공을 이수하는 재학생의 희망 직무는 아래와 같은 분포이다.<br> (취준생, 취업자의 다전공의 분포는 <a href='../major.html#multimajortype' target='_blank'>이곳</a>에서 확인할 수 있다.)</p>
+          
+          <br>
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">희망 직무에 따른 다전공 이수 현황 비교</h4>
+          <iframe id="igraph" scrolling="yes" style="border:none;" src="assets/img/Report/2_2multumajortype.html" height="1100" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 재학생 34명 | 단일선택</p>
+          <p>그래프를 보면, 재학생이 이수하는 다전공이 다양하고, 선택한 전공에 따라 희망직무가 조금씩 차이가 있다.</p>
+          <p>우선, <b>사서직을 희망</b>하는 학생(33명)에서 다전공을 희망하는 비율은 45.5%(15명)으로 사서직을 희망하는 학생들이 <b>반드시 전공심화를 선택하진 않는다는 것을 알 수 있다.</b>
+		      다전공을 이수하고 있는 사서직 희망 학생(15명)을 살펴보았을 때, 특정 다전공에 쏠리는 현상은 나타나지 않았으며 소프트웨어학부(2명), 국어국문학과(2명), 공공인재학부(2명), 소프트웨어인문(2명), 응용통계학과(3명) 등 다양한 다전공을 선택하고 있다.
+		      해당 전공을 선택한 이유는 ‘평소 흥미나 적성과 관련되어서’(6명), ‘취업의 폭을 넓히기 위해서'(6명), ‘진로의 필요조건을 갖추기 위해서'(3명),
+		      ‘주전공에 대한 지식을 확장할 수 있어서’(2명), ‘현실과 타협할 수밖에 없어서(낮은 학점, 부족한 시간 등)’, ‘전공심화하기는 부담돼서'등이 있다.  </p>
+
+          <p><b>정부 또는 공무원을 희망</b>하는 재학생(2명)역시 특정 전공이 아닌 다양한 전공(산업보안학과, 응용통계학과)을 선택하고 있다. 해당 전공의 선택 이유는 ‘현실과 타협할 수밖에 없어서(낮은 학점, 부족한 시간 등)’,
+			    ‘평소 흥미나 적성과 관련되어서', ‘진로의 필요조건을 갖추기 위해서', ‘주전공에 대한 지식을 확장할 수 있어서'로 나타난다.</p>
+          <p>다전공을 이수하면서 <b>공기업 취업을 희망</b>하는 재학생은 1명이다. 공기업을 희망하는 학생의 해당 다전공을 선택한 이유는 ‘취업의 폭을 넓히기 위해서', ‘진로의 필요조건을 갖추기 위해서'로 나타난다. </p>
+          <p><b>사기업을 희망</b>하는 재학생 19명 중  다전공을 이수하는 재학생은 12명으로 약 63.2%의 비교적 많은 학생들이 다전공을 선택하였다.
+		      재학생(12명)이 선택한 다전공은 도시계획부동산학과, 경제학부, 유럽문화학부, 미디어커뮤니케이션학부(2명), 자기설계전공(2명), 소프트웨어인문(2명), 응용통계학과(3명)가 있으며 해당 다전공을 선택한 이유는
+		      ‘평소 흥미나 적성과 관련되어서', ‘취업의 폭을 넓히기 위해서'가  제일 많이 나타난다.</p>
+
+		
+          <hr>
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">다전공 선택 이유</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/2_3multmajorwhy.html" height="330" width="100%"></iframe>
+            <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 재학생 34명, 취준생 4명, 취업자 6명 | 복수선택</p>
+          <p>설문결과에서 문헌정보학과 재학생 및 졸업생의 다전공 선택 이유는 ‘취업의 폭을 넓히기 위해서'와  ‘평소 흥미나 적성과 관련되어서’ 모두 각각 약 57%(전체 44명 중 25명)로 가장 많고,
+          ‘진로의 필요조건을 갖추기 위해서’가 약 30%(전체 44명 중 13명), ‘주전공에 대한 지식을 확장할 수 있어서’가 약 20%(전체 44명 중 9명) 등이 뒤를 잇고 있다.
+          <b>즉, 다전공은 진로에 따라서 특정 다전공을 많이 선택하는 경향이 뚜렷하게 드러나지 않으며, 취업과 연계된 전공을 이수하는 경우도 많지만 평소 흥미있는 과목이나 적성에 맞는 전공을 선택하기도 한다는 것이다. </b>
+              <br><br><br></p>
+          <hr>
+
+          <p>그렇다면 재학생들이 다전공을 이수하는 과정에서 겪는 어려움은 무엇일까?</P>
+            <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">다전공 이수 시 겪은 어려움</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/2_4multmajordiffi.html" height="300" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 재학생 34명, 취준생 4명, 취업자 6명 | 복수선택</p>
+          <p>가장 큰 요인은 순서대로 '시간표 구성의 어려움’(20.19%), ‘수강신청의 어려움’(19.23%), ‘ 정보부족’(19.23%) 등으로 나타난다.
+          이러한 어려움을 해소하기 위해서는 <b>학생들이 강의 수요 조사에 적극적으로 참여하고, 학과 내에서도 수요 조사 내용을 적극적으로 반영하려는 노력이 필요</b>하다.
+          한편, 복수전공자들의 정보 부족을 해결하기 위해 복수전공자들 간의 커뮤니티, 소모임, 스터디를 마련하는 것도 해결방안이 될 수 있다.
+          <br><br><br></p>
+          <hr>
+
+          <p>
+            전공심화를 선택한 문헌정보학과 학생(2022학번 제외)의 수도 전체 응답자의 절반(46.88%)을 차지하고 있다. 그렇다면 우리 학과 교육과정에 대한 학생들의 생각은 어떨까?
+          </p>
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">문헌정보학 흥미 교육과정</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/2_5favorcourse.html" height="300" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 재학생 72명, 취준생 5명, 취업자 9명 | 단일선택</p>
+          <p>재학생, 취준생, 졸업생들에게 가장 흥미 있는 교육과정에 대해 물었을 때 재학생은 2021년 조사에 이어 <b>정보학</b>이 여전히 1위로 나타난다(37.5%). 다만 취업자는 작년과 달리 올해는 <b>도서관 경영</b>이 1위이며(44.4%) 취준생은 <b>자료조직</b>이 1위이다(40%).
+		      작년과 올해 모두 재학생들의 흥미 주제 1위가 정보학인 것, 추가 개설희망과정 응답에서 정보학 관련 내용이 있었던 것을 볼 때 <b>정보학에 대한 수업을 강화할 필요</b>가 있다. 특히 취준생은 빅데이터와 관련된 강의 개설을 희망하는 경향이 강하다.
+		      정보학 외에도 기록 관리, 도서관 실습, 통계(R, SPSS) 등의 분야로 강의 개설을 희망하는 학생들도 있다. 학생들의 만족도를 높이기 위해서는 신규 강의 개설 시 이를 참고해야 한다. 
+          <br><br><br>
+          </p>
+		      <hr>
+          
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">필요 취업 강화 프로그램</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/2_6workstren.html" height="300" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 재학생 72명, 취준생 5명, 취업자 9명 | 복수선택</p>
+          <p>필요한 취업 강화 프로그램을 묻는 질문은 재학생, 취준생, 취업자의 응답이 유사한 형태로 나타난다. <b>‘실습 및 인턴’</b>은 재학생(28.04%), 취준생(38.46%), 취업자(30.77%)모두 1위로 꼽은 항목이며,
+		      이어서 <b>‘학과 선배 및 현직자 멘토링’</b> (재학생:21.5%/ 취준생:30.77/ 취업자:23.08%) 이 2위를 차지하였다. </p>
+		      <p>세 집단에서 공통적으로 실습 및 인턴, 학과 선배 및 현직자 멘토링에 대한 중요성과 필요를 보이고 있어 학과 차원에서 이에 대한 대응이 필요하다.
+		      이때 학과 선배 및 현직자 멘토링의 방식은 재학생, 취준생, 취업자 모두가 많이 가장 선호한 대면 만남 혹은 오픈채팅이 적절할 것으로 예상된다. 
+          <br><br><br></p>      <hr>
+
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">필요 진로 관련 프로그램</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/2_7workneed.html" height="300" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 재학생 72명, 취준생 5명, 취업자 9명 | 복수선택</p>
+          <p>필요 진로 프로그램을 묻는 질문에서 역시  재학생, 취준생, 취업자의 응답이 유사한 형태로 나타난다. 세 집단 모두 공통적으로  <b>‘진로 관련 로드맵’</b>
+          (재학생:38.73%/취준생:60%/취업자:53.33%)을 가장 많이 응답했으며 이어서 <b>‘진로탐방프로그램’</b>（재학생:31.69%/취준생:20%/취업자:33.33%) 을 많은 학생들이 선택했다.
+          특히 졸업생 (취준생, 취업자) 응답자 중 절반 이상이 진로 관련 로드맵의 필요성을 강조한 만큼, 해당 프로그램의 마련은 문헌정보학과 학생들에게 많은 도움이 될 것이다. </p>
+          <p>앞서 언급한 통계 결과에 기반하여 학과 차원에서 교육 과정을 개발하고 취업강화프로그램, 진로프로그램을 마련한다면 학생들의 교육 만족도는 더욱 올라갈 것이다.
+          위에서 언급했던 재학생, 취준생, 취업자의 추가 개설희망과정 응답은  <a href='https://docs.google.com/spreadsheets/d/19PbyGhI9-YDV3HzUBb9s38slocYzQ0U09zvNCixussQ/edit#gid=318546289' target='_blank'>이곳</a>에서 확인할 수 있다.
+	        선호되는 학과 선배 및 현직자 멘토링의 방식 응답은  <a href='../major.html#information_exchange' target='_blank'>이곳</a>에서 확인할 수 있다.
+          <br><br><br></p>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services2" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>대학원</h2>
+        </div>
+
+        <div class="row">
+          <p>학부 졸업 후 많은 학생들이 바로 취업을 준비하지만, 대학원 진학을 고려하기도 한다. 얼마나 많은 학생들이 대학원에 진학하길 희망하며, 어떤 대학원에 진학하려고 할까? 또한 대학원에 진학하려는 이유는 무엇일지 응답 결과를 토대로 확인한다.</p>
+          <!--대학원 진학 의향-->
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">대학원 진학 희망 여부</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/3postgraduateyn.html" height="140" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 학부재학생 68명 / 단일선택</p>
+          <p>응답 결과에 따르면,  학부 재학생 68명 중 약 26.47%(18명)이 대학원에 진학할 의향이 있다. 2021년 설문조사에서 학부 재학생의 약 30.6%가 대학원을 희망한다고 응답했던 것과 비교했을 때, 미세하게 감소했지만 큰 차이 없이 대학원에 진학하길 희망한다. 그렇다면 이들은 어떤 대학원에 진학하고 싶어할까?<br><br></p>
+          
+          <!--진학 희망 대학원 종류-->
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">희망 대학원 종류</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/3postgraduatetype.html" height="140" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 학부재학생 18명 / 복수선택</p>
+          <p>희망하는 대학원에 대한 생각을 복수 응답으로 받은 결과, 대학원 진학을 희망하는 학부 재학생 18명 중 61.11%(11명)은 <b>본교 문헌정보학과 대학원</b>을 선택했다. 
+            작년 학부 재학생의 48.78%보다 <b>약 10%p이상 많은 수치</b>이다. 문헌정보학과 외 전공의 대학원을 희망하는 학생도 있지만(33.33%), 약 66.67%의 학생들이 문헌정보학과 대학원 진학을 희망한다. 그렇다면 이들이 대학원에 진학하려는 이유는 무엇일까? <br><br></p>
+          <!--대학원 진학 희망 이유-->
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">대학원 진학 목적</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/3postgraduatepurpose.html" height="140" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 학부재학생 18명 / 복수선택</p>
+          <p>대학원 진학을 희망하는 가장 큰 이유는 ‘전문성 강화(54.55%)’이다. 작년 48.72%와 비슷한 수치로, 많은 학부 재학생들이 학부 과정에서 채우기 부족했던 전문성과 지식을 갖추기 위해 대학원 진학을 희망하는 것으로 보인다. 뿐만 아니라 ‘취업 준비’를 이유로 선택한 33.33% 학생들 역시 진로 선택의 폭을 넓히기 위해, 대학원에서 더 깊은 내용을 배워 전문성을 갖추기 위함으로 보인다. <br><br></p>
+          <!--대학원 진학 준비 시 겪는 어려움-->
+          <p>한편, 대학원 진학 준비 시에는 많은 어려움이 따른다. 학부 재학생들이 대학원 진학 준비 중 겪는 어려움에는 무엇이 있을까?</p>
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">대학원 진학 준비 시 겪은 어려움</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/3postgraduateno.html" height="180" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 학부재학생 18명 / 복수선택</p>
+          <p>대학원을 희망하는 18명의 학부 재학생 중 16명이 <b>‘진학 준비 과정에 대한 정보 부족’을 가장 큰 어려움</b>으로 선택하고 있다. 대학원 진학에 대한 기본적인 정보는 목표하는 대학교의 대학원 사이트에서 확인할 수 있다. 하지만 학생들이 궁금해하는 내용은 대학원의 종류나 전형과 같은 형식적인 내용이 아닌, 대학원에 진학하기 위해 실직적으로 준비해야 하는 내용에 대한 고민인 만큼 해당 내용에 부분에 대한 보완이 필요하다. 마찬가지로 대학원 진학을 희망하는 학생들의 55.55%가 선택한 ‘진학 후 연구 내용에 대한 정보 부족’과 38.88%가 선택한 ‘교수님 혹은 연구실과의 컨택 어려움’ 역시 단순한 검색을 통해 해결하기는 어려운 내용이다.</p>
+
+          <p>이렇게 혼자 해결하기 어려운 고민들을 학과 차원에서 도와준다면 학생들이 좀 더 수월하게 대학원 진학을 준비할 수 있다. 
+            학과에서 실제로 <b>대학원에 진학한 선배와의 만남의 장을 열어주거나 그들의 경험을 모아 공유</b>해준다면, 대학원을 희망하는 학생들이 검색으로는 알 수 없는 실질적이고 의미있는 내용을 배우는 기회가 될 것이다. </p>
+
+          <p>또한 학생 개개인의 지속적인 탐구와 성찰 역시 중요하다. 학과에서 다양한 정보를 제공하더라도, 대학원에 진학하고 싶은 학생 개인의 능동적인 노력이 없다면, 원하는 결실을 맺기 어렵다. 따라서 학과에서 제공하는 정보와 기회를 바탕으로, 자신이 어떤 내용을 배우고 연구하고 싶은지 끊임없이 탐구하고 고민하는 시간을 가진다면, 대학원 진학 준비뿐만 아니라, 앞으로의 진로에도 큰 도움이 될 것이다.</p>
+          <p>한편, 작년 학부 재학생 22명 중 54.54%(12명)의 학생들이 ‘높은 수업료’를 어려움으로 선택했던 것에 이어, 올해에도 18명 중 50%(9명)의 학생들이 이를 어려움으로 선택하고 있다. 본교 대학원에는 CAU GRS 장학금 등 <a href="http://graduate.cau.ac.kr/2018/encourage01.php" target="blank"><strong>다양한 등록금 지원</strong></a> 다양한 등록금 지원 프로그램이 있다. 대학원을 희망하지만 높은 수업료가 고민인 학생들에게 학과에서 등록금 지원 관련 정보를 충분히 제공해준다면, 경제적으로 부담이 되는 학생들에게 큰 도움이 될 것이다.<br><br></p>
+
+          <!--대학원 진학 비희망 이유-->
+          <p>반면, 학부 재학생 68명 중 73.53%(50명)의 학생은 대학원 진학을 고려하지 있지 않았다. 이들이 대학원 진학을 희망하지 않는 이유는 무엇일까?</p>
+         <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">문헌정보학 전공자 가능진로</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/3nohopereason.html" height="140" width="100%"></iframe>
+          <p>대학원 진학을 희망하지 않는 가장 큰 이유는 ‘연구에 관심이 없음’(70%)으로 나타난다. 70%의 학생들이 연구에 관심이 없다고 생각한 원인은 대학원 진학 후에 이루어지는 연구과정에 대해 잘 알지 못하거나, 아직 스스로 연구해보고 싶은 주제를 선정하지 못했기 때문이라고 추측할 수 있다. 혹은 막연히 연구 자체에 부담을 느껴서 대학원의 연구 과정에 관심을 갖지 않을 수도 있다. 
+            작년 설문에서는 56.92%의 학생들이 연구에 관심이 없다고 응답했다. 
+            이렇듯 작년과 올해 모두 과반수의 학생들이 대학원 진학을 희망하지 않는 이유로 연구에 관심이 없다는 항목을 선택하였기에 해당 요인에 주의를 기울일 필요가 있다. 
+            대학원에 진학하려는 이유가 다양함에 따라 <b>대학원의 교육 비전과 연구에 대한 경험을 학생들에게 설명할 수 있는 기회가 필요</b>해 보인다. 
+            이런 기회들은 정보가 부족해서 생기는 연구에 대한 막연한 무관심과 부담을 줄이는 역할을 할 것이다. </p>
+          <p>한편, 작년에는 52명 중 34.61%(18명)의 학생들이 ‘높은 수업료’를 대학원에 희망하지 않는 이유로 응답했지만, 올해에는 50명 중 20%(10명)의 학생들만 선택하고 있다. 작년에 비해 줄어든 수치이지만 여전히 전체에서 두번째로 큰 비중을 차지한다. </p>
+          <p>작년과 마찬가지로 올해에도 적지 않은 재학생들이 대학원 진학을 생각하고 있다. 
+            대학원을 희망하는 학생들이 겪는 어려움뿐만 아니라, 대학원을 희망하지 않는 학생들이 가진 어려움까지 고려하여, 학생들의 정보 부족으로 놓치는 기회를 줄여야 한다. 
+            지속적인 설문조사를 통해 학과 차원에서 학생들이 필요한 부분을 확인하여 충족시킬 수 있으며, 이를 위해서는 재학생과 졸업생의 꾸준한 참여가 중요하다. </p>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services3" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>취업</h2>
+        </div>
+
+        <div class="row">
+          <!--재학생 현재&입학 당시 희망진로-->
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">재학생 입학당시·현재 희망진로 종류 비교</h4>
+          <iframe id="igraph" scrolling="yes" style="border:none;" src="assets/img/Report/4jobstudentcompare.html" height="550" width="100%"></iframe>
+
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 재학생 72명 / 복수선택 </p>
+          <p>재학생에게 입학 당시와 현재의 희망진로 유무를 묻는 질문에서는 근소하지만 두 시기의 차이를 확인할 수 있다. 입학 당시 희망진로가 있는 재학생은 68.97%(47명)이고 현재 희망진로가 있다고 답변한 학생은 81.61%(52명)으로, 입학 당시와 비교했을 때 현재 희망진로가 있는 학생의 비율이 약 12.64%p 증가했다. 2021년 해당 질문에서도 입학 당시와 현재 희망진로가 있다고 답변한 재학생이 각각 69%(60명), 81.6%(71명)으로 희망진로가 있는 학생들의 수치가 12.6%p 증가한 것을 확인했다. <b>작년과 비슷한 비율로 올해에도 우리 학과에 입학 한 후 희망 진로를 정립한 학생들이 다수 존재한다는 것을 확인했다.</b></p>
+
+          <p>더 나아가 직군별로 재학생의 희망진로 비율의 변화를 살펴보면, 입학 당시에 비해 희망하는 비율이 비교적 큰 폭으로 감소한 직군으로는 <b>사서(-10.7%p), 사서교사(-10.3%p)</b> 등이 있고, <b>비율이 증가한 직군은 데이터전문가(+6.09%p), 공기업(+3.99%p) 등이 있다.</b></p>
+
+
+          <p>작년 해당 질문의 결과에서 입학 당시에 비해 현재 희망하는 비율이 증가한 직군이 1위 공무원, 2위 대학교(교수 및 직원), 3위 일반사기업으로, 올해 데이터전문가와 공기업의 비율이 가장 크게 증가한 것과는 다른 양상이다. 이는 <b>우리 학과 입학 후, 고려하게 되는 진로의 종류에 변화가 생긴 것이므로 유의한 결과</b>로 볼 수 있다. 한편, 사서교사같은 경우는 학년별로 10%로 제한된 교직 이수 비율에 영향을 받기 때문에 입학 당시보다 비율이 작아진 경향을 보인 것으로 추정하고, 사서에 대해서는 입학 후에 생각이 변화한 학생들이 일부 존재하는 것으로 보인다.
+            <br> </p>
+
+          <blockquote class="text-pull-right">
+            <p>입학 당시 & 현재 희망 진로 비교
+              <br>(2021ver.)
+              <br>공무원 : (+3.24%p)
+              <br>대학교(교수 및 직원) : (+3.1%p)
+              <br>일반 사기업 : (+2.97%p)
+              <br>공기업 : (+1.85%p)
+              <br>데이터 전문가 : (+0.59%p)
+              <br>기타 : (+0.4%p)
+              <br>개발자(프로그래머) : (+0.19%p)
+              <br>기록물 관리자 : (-0.13%p)
+              <br>사서 : (-0.53%p)
+              <br>출판업 : (-1.19%p)
+              <br>언론인 : (-4.43%p)
+              <br>사서교사 : (-6.09%p)  
+            </p>
+          </blockquote>
+
+          <p><br></p>
+
+
+          <!--집단별 가능진로 비교-->
+          <hr>
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">문헌정보학 전공자 가능진로 비교</h4>
+          <iframe id="igraph" scrolling="yes" style="border:none;" src="assets/img/Report/4possible_job.html" height="500" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 재학생 72명, 취준생 5명, 취업자 9명 / 복수선택</p>
+
+          <p>문헌정보학과 전공자가 가질 수 있는 진로를 의미하는 가능 진로에 대한 재학생, 취준생, 취업자의 생각을 물은 질문에서도 세 집단의 유의한 차이를 확인할 수 있다. 재학생, 취준생, 취업자 모두에서 가장 많은 사람들이 가능 진로로  선택한 것은 ‘사서’이다. 하지만 2위부터는 집단별 비율이 조금씩 다른 것을 확인했다. 재학생, 취업자가 2위로 선택한 것은 ‘사서교사’이지만 취준생은 ‘공무원’을 2위로 선택하고 있다. 3위로는 재학생은 ‘기록물 관리자’, 취준생은 ‘사서교사’, 취업자는 ‘대학교(교수 및 직원)’이다. </p>
+          <p>가능진로에 대한 재학생의 생각은 현재 재학생들의 희망진로와 비교해봤을 때 유의미한 특징이 나타난다.</p>
+
+          <p>재학생의 경우 1~3위가 ‘사서’, ‘사서교사’, ‘기록물 관리자’로 비교적 학교 내의 교육과정과 관련된 직군이 높은 순위를 모두 차지했지만 취준생, 취업자부터는 그 양상이 조금 달진다. 이는 실제로 취업을 준비하고, 취업을 하게 되면 보이는 진로가 변화하기 때문으로 해석할 수 있다.</p>
+
+          <p>또한 세 집단별로 전반적인 직군별 응답 비율을 비교해보면 재학생은 1~5위의 응답 비율 차이가 크게 나지 않는데(1위 11.7%, 5위 9.4%), 취준생, 취업자는 1~5위 간의 비율 차이가 비교적 큰 편이다(취준생 1위 17.2%, 공동 3위 10.3% / 취업자 1위 14.8%, 공동 4위 9.8%). 이러한 양상 또한 재학생은 아직 진로를 고민하는 시기이기 때문에 가능 진로를 생각할 때 더 넓은 범위까지 가능 진로로 받아들이지만, 취업 시장을 본격적으로 겪어본 졸업생들 입장에서는 ‘가능’의 범위가 좁아진 것의 영향으로 볼 수 있다. </p>
+
+          <p>가능한 진로의 범위를 넓게 보는 것이 진로를 고민하는 입장에서 당연하고, 본인의 가능성을 제한하지 않는다는 의미에서 좋지만, 실제 준비와 연결하기 위해서는 방향을 잡고 구체화하는 과정이 필요하다. 따라서 가능진로와 관련해서 재학생들에게 <b>우리 학과 졸업생 중 실제 어떤 직군으로 취업한 사람들이 있는지 등 실제 취업 현황과 관련한 활발한 정보 제공이 있다면 더 도움이 될 것이다.</b></p>
+
+          <!--희망 & 현재 근무 분야 비교-->
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">희망·실제 직종 비교</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/4job_compare.html" height="300" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 재학생 72명, 취준생 5명, 취업자 9명 / 단일선택</p>
+          <p>재학생은 희망 근무 분야  ‘사서직’을 44.59%(33명)을 가장 많이 선택했고, ‘사기업’ 25.68%(19명)이 그 뒤를 이었다. 취업자 9명의 답변은 ‘사서직’ 66.67%(6명), ‘사기업’ 33.3%(3명)으로 두 종류의 답변으로 나뉜다.<b>재학생과 졸업생은 모두 ‘사서직’이 가장 높은 비율을 차지한다. 반면, 취준생의 희망 근무분야에는 ‘사서직’이 아예 해당되지 않는다.</b> 물론 이때 전체 취준생 응답자의 수가 5명이라는 것을 참고해야한다.
+          </p>
+
+          <p>작년과 마찬가지로 우리 학과에서 사서직을 희망하고, 또 실제 취업하는 사람들이 높은 비율을 차지하는 실상이지만 재학생과 취준생, 취업자 모두에게서 나타난 근무 분야인 사기업 희망/취업도 큰 비중을 차지하고 있다. 이처럼 <b>비슷한 근무 분야를 희망하는 학과 내의 사람들이 다수 있다는 것을 서로 확인하여, 필요하다면 함께 준비할 수 있는 창구를 고민해보고, 더 나아가 실제 해당 근무 분야에 근무 중인 취업자와 교류할 수 있는 자리를 마련한다면 도움이 될 것이다.</b>
+            <br><br></p>
+
+          <!--재학생 취준생 취업자 직업 선택 가치관 비교-->
+          <hr>
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">직업 선택 가치관 비교</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/4jobvalues.html" height="500" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 재학생 72명, 취준생 5명, 취업자 9명 / 단일선택</p>
+          <p>직업을 선택할 때 중요시 여기는 가치가 무엇인지 묻는 질문에서 재학생과 졸업생의 답변 양상이 달랐다. <b>취준생과 취업자는 ‘급여 수준’을 1순위로</b> 꼽았으며 <b>재학생은 ‘적성과 흥미’를 1순위</b>로 꼽았다. 2순위로는 재학생이 ‘급여 수준’을 취준생은 ‘조직문화’, 취업자는 ‘고용안정성’을 꼽았다.  결론적으로 ‘급여 수준’, ‘고용안정성’이 세 집단 모두에서 3순위 안에 들어, 재학생과 졸업생 모두 ‘적성과 흥미’, ‘급여 수준’을 직업 선택에 있어서 중요한 가치로 여긴다는 것을 확인했다</p>
+
+          <!--재학생 취준생 취업자 연봉 수준 비교-->
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">희망·실제 연봉 비교</h4>
+          <iframe id="igraph" scrolling="yes" style="border:none;" src="assets/img/Report/4jobincome.html" height="550" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 재학생 72명, 취준생 5명, 취업자 9명 / 단일선택</p>
+          <p>올해 가장 많은 재학생이 선택한 희망연봉 구간은 3500만원 이상 4000만원 미만으로 약 23.61%(17명)이 선택하고 있다. 재학생은 대체로 2500만원 이상~4000만원 미만의 구간을 선택하여  <b>재학생들이 작년보다 높은 연봉 수준을 희망하는 양상</b>을 보이고 있다. 취준생은 최소 3000만원 이상의 구간부터 최대 5500만원 이상의 구간을 선택하였는데, 5500만원 이상의 구간을 선택한 사람이 40%(2명)로 가장 많다. 한편, 취업자의 실제 연봉에서는 2000만원 이상 2500만원 미만, 3000만원 이상 3500만원 미만 구간이 각각 33.3%(2명)로 같은 비중을 차지한다.
+          </p>
+
+          <blockquote class="text-pull-right">
+            <p>재학생 희망 연봉 수준 (2021ver.)
+              <br>2천~2천5백 : (5.75%)
+              <br>2천5백~3천 : (22.99%)
+              <br>3천~3천5백 : (24.14%)
+              <br>3천5백~4천 : (16.09%)
+              <br>4천~4천5백 : (14.94%)
+              <br>4천5백~5천 : (3.45%)
+              <br>5천~5천5백 : (3.45%)
+              <br>5천5백 이상 : (9.2%)
+			  <br>* 단위 : 만원
+            </p>
+          </blockquote>
+
+          <p>이렇듯 <b>재학생의 희망연봉수준이 다소 높아져 실제 취업자의 연봉과 비슷하거나 오히려 그보다 높은 수준을 희망하는 양상</b>을 보인다. 또한 작년에는 재학생과 졸업생 사이에 뚜렷한 차이가 보였지만 올해는 희망/실제 연봉이 비슷한 수준이 되었다. 
+            <br>
+            재학생의 희망진로는 작년(사서직42.5%, 사기업26.4%, 정부공무원13.79%)과 유사한 양상(사서직44.6%, 사기업25.7%, 정부공무원12.16%) 을 보임에도 희망연봉수준은 높아진 것에서 재학생은 희망진로에 대한 정보를 보다 구체적으로 확인할 필요가 있을 수 있다. 
+            <br><br>
+          </p>
+
+          <!--2022 재학생 취준생 취업자 준비 내용 비교-->
+          <hr>
+          <p>현재/과거 취업을 위해 준비한 일이 있다고 응답한 재학생, 취준생, 취업자의 실제 준비하고 있는 일 종류에 대한 비교를 나타낸 그래프이다. </p>
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">진로·취업을 위해 준비하는 일 비교</h4>
+          <iframe id="igraph" scrolling="yes" style="border:none;" src="assets/img/Report/4jobprepare.html" height="550" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 재학생 53명, 취준생 5명, 취업자 7명 / 단일선택</p>
+          <p>재학생은 학업성적(27.94%, 38명), 각종 자격증 취득(17.65%, 24명), 교내활동(13.24%, 18명)을 주력으로 준비하고 있고, 취준생은 각종 자격증 취득(33.33%, 2명)이나 공시 공부(16.6%, 1명), 어학준비(16.6%, 1명) 위주로 준비하고 있다. 한편 취업자는 실제로 각종 자격증 취득(17.65%)과 어학 준비, 실습, 인턴을 위주로 준비했다고 나타난다. ‘학업성적’은 가장 많은 재학생이 준비하고 있는 부분이다. 반면, ‘학업성적’을 준비했다고 응답한 취업자의 비율은 다른 응답을 선택한 취업자에 비해 적은 편이다. 이와 반대로 취업자가 주로 준비한 내용인 ‘어학 준비’, ‘실습’, ‘인턴’은 각각 재학생의 9.56%(13명), 5.88%(8명), 5.88%(8명)에 달하는 인원만이 준비하고 있다. </p>
+          <p>재학생과 졸업생 간의 준비 내용에 차이가 있는 것은 이는 <b>여전히 재학생들은 취업 준비 방향을 설정하는 것에 어려움을 겪고 있다는 것을 의미</b>한다. 따라서 재학생들은 현재 준비하고 있는 일들이 실질적으로 취업에 도움이 되는지, 준비 방향이 맞는지에 대한 스스로 다시 생각해보는 시간을 가짐과 동시에, 학과에서는 재학생들의 취업 준비 방향 설정에 도움을 줄 수 있는 보다 적극적인 방법에 대한 고민이 필요하다. 나아가 적절한 준비에 대한 실질적인 도움을 주기 위해 <b>재학생의 취업 준비 내용과 달리 취업자의 준비 내용이 ‘자격증 취득’, ‘실습’, ‘인턴’ 위주인 것을 참고하여, 관련 활동에 대한 학과 차원의 지원에 대한 필요성 또한 재고해야 한다.</b></p>
+
+          <!--재학생 준비 없는 이유-->
+          <hr>
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">진로·취업을 위해 준비하는 일 없는 이유</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/4studentnoprepare.html" height="550" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 재학생 19명 / 복수선택</p>
+          <p>준비하고 있는 일이 없다고 응답한 26.39%(19명)의 재학생이 현재 준비하고 있는 일이 없는 이유는 ‘학교 공부로 기초를 먼저 쌓고 싶다’, ‘정해둔 진로가 없다’는 것이 27.78% (각 10명)로 가장 많이 나타난다. 두 번째로 많은 재학생이 응답한 ‘정해둔 진로는 있는데 뭘 해야할지 잘 몰라서’ (22.22%, 8명)에 주목해봤을 때, 이들을 위해 실제 취업자들의 경험을 참고하여 설계된 진로 로드맵과 같은, 취업 정보 제공으로 취업까지 필요한 준비 과정을 보여주는 프로그램 등이 도움이 될 것이다. </p>
+
+          <!--취업자 취업 준비 어려움-->
+          <hr>
+          <p>졸업생들이 실제로 취업을 준비하면서 겪은 어려운 점들을 확인해보고 취업을 준비하는, 준비 할 학생들에게 도움이 되는 일을 고민해보고자 한다. </p>
+          <h4 style="text-align: center;font-size:17.5px;font-weight:bolder">졸업생 취업 준비 시 겪은 어려움</h4>
+          <iframe id="igraph" scrolling="no" style="border:none;" src="assets/img/Report/4hardprepare.html" height="270" width="100%"></iframe>
+          <p style='text-align: center; font-size: 12px; color:#868e96;'>* 대상: 취업자 9명 / 복수선택</p>
+          <p>취업자가 겪었던 취업 준비과정에서의 어려움은 ‘고용 기회 부족’(40%, 8건), ‘심리적 부담감’(30%, 6건), ‘취업 정보 부족’(20%, 4건) 의 순으로 응답이 많았는데, 이 중 ‘취업 정보 부족’은 학과 차원에서 지원이 가능한 문제이다. 위에서 언급했던 '재학생의 현재 준비하고 있는 일이 없는 이유'와도 연결해보면, <b>진로를 결정하거나 결정한 진로를 준비하기 위한 방법 또한 취업 정보 등을 얻는 데 도움이 되는 창구로서 학과의 역할이 중요</b>하다고 할 수 있다.</p>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>마무리</h2>
+        </div>
+
+        <div class="row">
+          <p>	본 설문조사의 결과를 정리하면 다음과 같다.<br></p>
+          <ul>
+            <li>재학생 절반 정도(약 53%)가 다전공을 이수하고 있으며 이수 목적 또한 흥미 및 적성과 취업에 집중되어 있다. 이러한 점은 작년 설문 결과와 비슷하다. 또한 진로에 따라서 특정 다전공으로 몰리는 경향이 뚜렷하지 않다.</li>
+            <li>작년과 올해 재학생들의 흥미 주제 1위가 정보학인 것, 추가 개설 희망 과정에서 정보학 내용이 다수인 것을 고려하여 해당 주제의 수업을 강화해야 한다.</li>
+            <li>작년에 비하여 대학원 진학 희망 비율이 약 27%로 약간 감소하였고 진학 희망자 중 자대 자과 대학원으로의 진학을 과반수 이상(61%)이 희망하고 있다.</li>
+            <li>작년과 마찬가지로 졸업생은 자격증, 어학, 인턴 등을 준비하지만 재학생은 학업성적, 자격증, 교내활동을 위주로 준비하고 있다.
+			          처한 환경이 취업 시장이느냐 학교이느냐에 따른 차이일 수 있지만 재학생들은 취업 시장에서 요구되는 요건을 생각하며 다시 한 번 방향 설정을 할 필요가 있다.</li>
+            <li>필요 취업 강화프로그램으로 재학생과 졸업생 모두 실습 및 인턴, 학과 선배 및 현직자 멘토링을 모두 1,2위로 꼽은 만큼 해당 프로그램의 개발이 요구되며 재학생과 졸업생 모두에게 선호되는 방식인 ‘대면 만남’, ‘오픈 채팅’이 적절해 보인다. </li>
+            <li>필요 진로 프로그램으로 재학생과 졸업생 모두 ‘진로 관련 로드맵’, ‘진로탐방프로그램’을 1,2위로 뽑은 점에서 해당 프로그램 도입이 필요하다.</li>
+			      <li>재학생과 취업자의 희망연봉은 비슷하다. 재학생의 희망연봉이 작년에 비하여 상대적으로 높아져 실제 취업자와 비슷하거나 더 높은 수준이 되었다.</li>
+          </ul>
+
+          <p><br>작년에 비해 올해의 설문조사는 졸업생의 응답 비율이 높지 않기 때문에, 모든 응답 결과를 일반화하기에는 어렵다. 사회로 나간 졸업생의 응답을 더 높일 수 있다면 문헌정보학과의 취업에 관련된 유의미한 통계를 얻을 수 있을 것이다.
+		        따라서, 참여율을 높일 수 있는 전략을 수립하여 재학생과 졸업생의 실질적인 의견을 반영하는 것이 필요하다. 또한 정기적인 설문을 시행하여 모아진 재학생과 졸업생의 데이터를 참고함으로써 학과 발전에 대해 고민해야 한다.
+		        문헌정보학과 구성원들은 진로에 대해 진지하게 고민하고 있고, 학과 구성원의 정보교류의 필요성을 느끼고 있다. </p>
+
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+  </main><!-- End #main -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Baker</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- sidebar_dropdown -->
+  <script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+      });
+    }
+  </script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+  <script type="text/javascript">
+	if(!wcs_add) var wcs_add = {};
+		wcs_add["wa"] = "cd4e7649ce3fc0";
+	if(window.wcs) {
+ 		wcs_do();
+	}
+</script>
+
+
+</body>
+
+</html>
